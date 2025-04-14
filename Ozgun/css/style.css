@@ -1,0 +1,152 @@
+html, body {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+/* ----------------------------------- Header ----------------------------------- */
+
+header {
+    width: 80%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 3px 5px 8px orange;
+    position: fixed;
+    top: 0;
+}
+
+header img{
+    height: 50px;
+    margin-left: 1.5vw;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+    margin-right: 1.5vw;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: orange;
+}
+
+
+/* ----------------------------------- Main ----------------------------------- */
+#grandImage {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+
+#grandImage img {
+    width: 100%;
+    height: 100%;
+}
+
+#produitsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+    border: 1px solid white;
+    box-shadow: 3px 5px 8px orange;
+    width: 80vw;
+    gap: 20px;
+    padding-top: 10vh;
+}
+
+#produits img{
+    height: 200px;
+    width: 400px;
+}
+
+#produits div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Chaussures.php */
+body#pageChaussures main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    /* gap: 150px; */
+}
+
+
+#imgEtChaussure{
+    background-color: red;
+    height: 400px;
+    width: 400px;
+}
+
+#infoChaussures{
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+}
+
+#Commentaires{
+    background-color: green;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+
+/* ----------------------------------- Footer ----------------------------------- */
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 100px);
+    grid-template-areas: 
+    'list . . . .'
+    ' . . . . .'
+    'copyright . . . .'; */
+}
+
+/* footer p{grid-area: copyright;}
+footer ul{grid-area: list;} */
+
+/* footer p{
+    display: flex;
+} */
+
+footer ul li{
+    list-style: none;
+}
