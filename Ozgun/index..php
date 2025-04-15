@@ -24,7 +24,7 @@ if (file_exists("chaussures.json")) {
 
 <body>
 
-    <?php include("header.php") ?>
+    <?php include("./header.php") ?>
 
 
     <main>

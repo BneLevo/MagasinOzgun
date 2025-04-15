@@ -9,13 +9,13 @@
 </head>
 
 <body id="pageChaussures">
-    <?php include("header.php") ?>
+    <?php include("./header.php") ?>
 
     <main>
-        <div>
+        <div id="imgChaussuresEtCommentaires">
             <section id="imgEtChaussure">
-                <div id="imageChaussure"></div>
-                <div id="couleurChaussure"></div>
+                <div id="imageChaussure">a</div>
+                <div id="couleurChaussure">a</div>
             </section>
     
             <section id="Commentaires">
@@ -24,14 +24,14 @@
         </div>
 
         <section id="infoChaussures">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
         </section>
     </main>
 </body>
