@@ -1,47 +1,63 @@
 [
     {
-        "Chaussures": "Nike air max",
-        "image": "./img/nikeairmax.jpg"
+        "Chaussures": "Nike Air Max",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
     
     },
     {
-        "Chaussures": "Les",
-        "image": "./img/nikeairmax.jpg"
-    },
+        "Chaussures": "Nike Air Force 1",
+        "image": "./img/imgShoes/NikeAirForce1_07.png",
+        "prix": 140
 
-    {
-        "Chaussures": "Adidas",
-        "image": "./img/nikeairmax.jpg"
     },
-
     {
-        "Chaussures": "Nike air max",
-        "image": "./img/nikeairmax.jpg"
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
     
     },
     {
-        "Chaussures": "Les",
-        "image": "./img/nikeairmax.jpg"
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
+    
     },
 
     {
-        "Chaussures": "Adidas",
-        "image": "./img/nikeairmax.jpg"
-    },
-
-    {
-        "Chaussures": "Nike air max",
-        "image": "./img/nikeairmax.jpg"
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
     
     },
     {
-        "Chaussures": "Les",
-        "image": "./img/nikeairmax.jpg"
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
+    
     },
-
     {
-        "Chaussures": "Adidas",
-        "image": "./img/nikeairmax.jpg"
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
+    
+    },
+    {
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
+    
+    },
+    {
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
+    
+    },
+    {
+        "Chaussures": "Nike Air Max Plus",
+        "image": "./img/imgShoes/NikeAirMaxPlus.avif",
+        "prix": 170
+    
     }
-
 ]
