@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    scroll-behavior: smooth;
     /* overflow-x: hidden; */
 }
 
@@ -100,14 +101,13 @@ header nav ul li a:hover {
 body#pageChaussures main {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     margin-top: 120px;
     gap: 150px;
 }
 
 section#imgEtChaussure {
-    background-color: red;
+    box-shadow: 3px 5px 8px orange;
     height: 45vh;
     width: 50vw;
     display: flex;
@@ -131,35 +131,73 @@ div#imgChaussuresEtCommentaires {
     align-items: center;
 }
 
+div#imageChaussure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#imageChaussure img{
+    height: 25vh;
+}
+
 #Commentaires {
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 5px 8px orange;
     height: 40vh;
     width: 60vw;
     margin-top: 10vh;
 }
 
+section#Commentaires h2{
+    margin-top: 5vh;
+}
+
 #infoChaussures {
-    background-color: blue;
-    height: 87vh;
+    box-shadow: 3px 5px 8px orange;
+    height: 80vh;
     width: 20vw;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     gap: 10px;
 }
 
 section#infoChaussures div {
-    width: 10vw;
     display: flex;
     justify-content: center;
 }
 
-/* body#pageChaussures section div {
+section#infoChaussures div#nomChaussures {
+    color: black;
+    font-size: 25px;
+}
+
+section#infoChaussures #marqueChaussures{
+    color: gray;
+    margin-top: -8vh;
+}
+
+section#infoChaussures button {
+    width: 20vw;
+    height: 8vh;
+    border-radius: 50px;
+    font-size: 3vh;
+    color: orange;
     background-color: white;
-} */
+    border-color: orange;
+}
 
+section#infoChaussures button:hover {
+    background-color: orange;
+    color: white;
+}
 
+section#infoChaussures button#buttonAddToBag{
+    margin-bottom: -7vh;
+}
 
 
 

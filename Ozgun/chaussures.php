@@ -21,45 +21,47 @@ $nomChaussure = $_GET['chaussures'];
 
 foreach ($datas as $data) {
     $leNomChaussure = $data['Chaussures'];
-    if ($nomChaussure == $leNomChaussure) 
-    {
+    if ($nomChaussure == $leNomChaussure) {
         ?>
+
         <body id="pageChaussures">
-    <?php include("./header.php") ?>
+            <?php include("./header.php") ?>
 
-    <main>
-        <div id="imgChaussuresEtCommentaires">
-            <section id="imgEtChaussure">
-            <div id="couleurChaussure">a</div>
-                <div id="imageChaussure">
-                    <?php $imageChaussure = $data['image'] ?>
-                    <img src="<?= $imageChaussure ?>" alt="">
+            <main>
+                <div id="imgChaussuresEtCommentaires">
+                    <section id="imgEtChaussure">
+                        <div id="couleurChaussure">a</div>
+                        <div id="imageChaussure">
+                            <?php $imageChaussure = $data['image'] ?>
+                            <img src="<?= $imageChaussure ?>" alt="">
+                        </div>
+                    </section>
+
+                    <section id="Commentaires">
+                        <h2>Comments :</h2>
+                        <div>
+                            <!-- For comments -->
+                        </div>
+                    </section>
                 </div>
-            </section>
 
-            <section id="Commentaires">
+                <section id="infoChaussures">
+                    <div id="nomChaussures"><?= $nomChaussure ?></div>
+                    <div id="marqueChaussures">info chaussures</div>
+                    <?php $prixChaussure = $data['prix'] ?>
+                    <div id="prixChaussures"><?= $prixChaussure ?> CHF</div>
+                    <div>a</div>
+                    <div>a</div>
+                    <button id="buttonAddToBag">Add To Bag</button>
+                    <button>Favourite &#10084;</button>
+                </section>
+            </main>
+        </body>
 
-            </section>
-        </div>
-
-        <section id="infoChaussures">
-            <div><?= $nomChaussure ?></div>
-            <div>a</div>
-            <?php $prixChaussure = $data['prix'] ?>
-            <div id="prixChaussures"><?=$prixChaussure?> CHF</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-        </section>
-    </main>
-</body>
-
-<?php
+        <?php
     }
 }
-    
+
 ?>
 
 

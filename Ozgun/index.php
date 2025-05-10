@@ -45,8 +45,7 @@ if (file_exists("chaussures.json")) {
 
                         ?>
                         <div>
-                            <a href='chaussures.php?chaussures=<?= $nomChaussure ?>'><img src="<?php echo $data["image"] ?>"
-                                    alt=""></a>
+                            <a href='chaussures.php?chaussures=<?= $nomChaussure ?>'><img src="<?php echo $data["image"] ?>" alt=""></a>
                             <p><?= $data["Chaussures"] ?></p>
                         </div>
                         <?php
