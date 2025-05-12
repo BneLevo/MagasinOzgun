@@ -36,17 +36,19 @@ if (file_exists("chaussures.json")) {
 
             <div id="produitsDiv">
                 <article id="produits">
-
                     <!-- ici il y aura des produits -->
                     <?php foreach ($datas as $data) {
+                        $idChaussure = $data["id"];
                         $nomChaussure = $data["Chaussures"];
                         $imageChaussure = $data["image"];
                         $prixChaussure = $data["prix"];
-
+                        $tailleChaussure = $data["taille"];
                         ?>
                         <div>
-                            <a href='chaussures.php?chaussures=<?= $nomChaussure ?>'><img src="<?php echo $data["image"] ?>" alt=""></a>
-                            <p><?= $data["Chaussures"] ?></p>
+                            <a href='chaussures.php?id=<?= $idChaussure ?>'><img src="<?php echo $data["image"] ?>" alt=""></a>
+                            <p><?= $nomChaussure ?></p>
+                            <p><?= $prixChaussure ?> .-</p>
+                            <button>Add To Bag</button>
                         </div>
                         <?php
                     }

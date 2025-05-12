@@ -4,7 +4,7 @@
 $json = file_get_contents("chaussures.json");
 $datas = json_decode($json, true);
 
-$nomChaussure = $_GET['chaussures'];
+$idChaussure = $_GET['id'];
 ?>
 
 <html lang="fr">
@@ -20,8 +20,8 @@ $nomChaussure = $_GET['chaussures'];
 <?php
 
 foreach ($datas as $data) {
-    $leNomChaussure = $data['Chaussures'];
-    if ($nomChaussure == $leNomChaussure) {
+    $lIdChaussures = $data['id'];
+    if ($idChaussure == $lIdChaussures) {
         ?>
 
         <body id="pageChaussures">
@@ -46,14 +46,38 @@ foreach ($datas as $data) {
                 </div>
 
                 <section id="infoChaussures">
+
+                    <?php $nomChaussure = $data['Chaussures'] ?>
                     <div id="nomChaussures"><?= $nomChaussure ?></div>
+                    <!-- Brend of shoes -->
                     <div id="marqueChaussures">info chaussures</div>
+
+                    <!-- Prize of shoes -->
                     <?php $prixChaussure = $data['prix'] ?>
                     <div id="prixChaussures"><?= $prixChaussure ?> CHF</div>
+
+                    <!-- Color of shoes -->
                     <div>a</div>
-                    <div>a</div>
+
+                    <!-- Size of shoes -->
+                    <?php
+                    $tailleChaussure = $data["taille"]
+                        ?>
+
+                    <div id="tailleChaussures">
+                        <?php
+                        foreach ($tailleChaussure as $taille) {
+
+                            ?>
+                            <button id="boxTailleChaussures">
+                                <?= $taille, "\n" ?>
+                            </button>
+                            <?php
+                        }
+                        ?>
+                    </div>
                     <button id="buttonAddToBag">Add To Bag</button>
-                    <button>Favourite &#10084;</button>
+                    <button id="buttonAddToFavourite">Favourite &#10084;</button>
                 </section>
             </main>
         </body>
