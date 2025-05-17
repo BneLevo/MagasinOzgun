@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ozgun</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logo.png" alt="logo">
+        <a href="./index.php"><img src="img/logo.png" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="">Qui suis-je</a></li>

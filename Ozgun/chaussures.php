@@ -12,13 +12,15 @@ $idChaussure = $_GET['id'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ozgun</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 
 <?php
-
+for ($data = 0; $data < 8; $data++) {
+    # code...
+}
 foreach ($datas as $data) {
     $lIdChaussures = $data['id'];
     if ($idChaussure == $lIdChaussures) {
@@ -80,6 +82,8 @@ foreach ($datas as $data) {
                     <button id="buttonAddToFavourite">Favourite &#10084;</button>
                 </section>
             </main>
+
+            <?php include("footer.php") ?>
         </body>
 
         <?php

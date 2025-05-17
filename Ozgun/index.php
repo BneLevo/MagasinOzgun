@@ -30,29 +30,47 @@ if (file_exists("chaussures.json")) {
     <main>
         <article id="grandImage">
             <img src="img/ExempleBigPhoto.jpg" alt="">
-            <!-- ici il y aura une grande image -->
         </article>
         <section>
 
             <div id="produitsDiv">
                 <article id="produits">
-                    <!-- ici il y aura des produits -->
-                    <?php foreach ($datas as $data) {
+                    <?php
+
+                    ?>
+                    <?php
+                    $c = 0;
+
+                    // Mélanger les datas
+                    shuffle($datas);
+                    foreach ($datas as $data) {
+
                         $idChaussure = $data["id"];
                         $nomChaussure = $data["Chaussures"];
                         $imageChaussure = $data["image"];
                         $prixChaussure = $data["prix"];
                         $tailleChaussure = $data["taille"];
+
                         ?>
                         <div>
-                            <a href='chaussures.php?id=<?= $idChaussure ?>'><img src="<?php echo $data["image"] ?>" alt=""></a>
+
+
+                            <a href='chaussures.php?id=<?= $idChaussure ?>'><img src="<?php echo $data["image"] ?>"
+                                    alt=""></a>
                             <p><?= $nomChaussure ?></p>
                             <p><?= $prixChaussure ?> .-</p>
                             <button>Add To Bag</button>
                         </div>
                         <?php
+                        $c++;
+
+                        // il va afficher que 6 produits
+                        if ($c >= 6) {
+                            break;
+                        }
                     }
                     ?>
+
 
                 </article>
             </div>
@@ -64,22 +82,8 @@ if (file_exists("chaussures.json")) {
             </article>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li>Magasin</li>
-            <li>Qui suis-je</li>
-            <li>Contact</li>
-        </ul>
-        <div>
-            <p>
-                oZGUN &copy; Copyright 2025
-                <br>
-                Made By Ozgun Levent
-            </p>
-        </div>
-        <!-- ici il y aura d'info de mon magasin et copyright etc. -->
-    </footer>
 
+    <?php include("footer.php") ?>
 
 </body>
 
