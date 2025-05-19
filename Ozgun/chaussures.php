@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-$json = file_get_contents("chaussures.json");
+$json = file_get_contents("./db/chaussures.json");
 $datas = json_decode($json, true);
 
 $idChaussure = $_GET['id'];

@@ -52,16 +52,64 @@ header nav ul li a:hover {
 
 /* ----------------------------------- Main ----------------------------------- */
 #grandImage {
-    max-width: 99vw;
+    max-width: 100vw;
     max-height: 100vh;
     margin-bottom: 10vh;
-    overflow: hidden;
+}
+
+#grandImage img:first-child {
+    width: 99vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 #grandImage img {
-    width: 100vw;
+    z-index: 10;
+    width: 99vw;
     height: 100vh;
 }
+
+
+#grandImage div img:nth-child(1) {
+    z-index: 10;
+    width: 99vw;
+    height: 100vh;
+}
+
+article#grandImage button,
+#grandImageNom {
+    position: absolute;
+    background-color: transparent;
+    color: orange;
+    box-shadow: 3px 5px 8px orange;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+article#grandImage button {
+    height: 8vh;
+    width: 25vh;
+    left: 75vw;
+    bottom: 23vh;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+article#grandImage>p {
+    height: 8vh;
+    width: 30vh;
+    left: 10vw;
+    bottom: 70vh;
+    font-size: 4vh;
+    position: absolute;
+}
+
+
+
+/* Les Produits */
 
 #produitsDiv {
     display: flex;
@@ -99,11 +147,11 @@ header nav ul li a:hover {
     width: 20vw;
 }
 
-#produits div:hover{
+#produits div:hover {
     transition: all 0.5s ease-out;
 }
 
-#produits div button{
+#produits div button {
     width: 15vw;
     height: 4vh;
     border-radius: 50px;
@@ -153,13 +201,13 @@ div#imgChaussuresEtCommentaires {
     align-items: center;
 }
 
-div#imageChaussure{
+div#imageChaussure {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div#imageChaussure img{
+div#imageChaussure img {
     height: 25vh;
 }
 
@@ -172,7 +220,7 @@ div#imageChaussure img{
     margin-top: 10vh;
 }
 
-section#Commentaires h2{
+section#Commentaires h2 {
     margin-top: 5vh;
 }
 
@@ -198,21 +246,21 @@ section#infoChaussures div#nomChaussures {
 }
 
 /* Brend of shoes */
-section#infoChaussures div#marqueChaussures{
+section#infoChaussures div#marqueChaussures {
     color: gray;
     margin-top: -7vh;
 }
 
 
 /* Size of shoes */
-section#infoChaussures div#tailleChaussures{
+section#infoChaussures div#tailleChaussures {
     color: orange;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-section#infoChaussures button#boxTailleChaussures{
+section#infoChaussures button#boxTailleChaussures {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,13 +272,14 @@ section#infoChaussures button#boxTailleChaussures{
     color: orange;
 }
 
-section#infoChaussures button#boxTailleChaussures:hover{
+section#infoChaussures button#boxTailleChaussures:hover {
     background-color: orange;
     color: white;
 }
 
 /* buttonAddToBag, buttonAddToFavourite */
-section#infoChaussures button#buttonAddToBag, button#buttonAddToFavourite{
+section#infoChaussures button#buttonAddToBag,
+button#buttonAddToFavourite {
     width: 20vw;
     height: 8vh;
     border-radius: 50px;
@@ -240,12 +289,13 @@ section#infoChaussures button#buttonAddToBag, button#buttonAddToFavourite{
     border-color: orange;
 }
 
-section#infoChaussures button#buttonAddToBag:hover, button#buttonAddToFavourite:hover {
+section#infoChaussures button#buttonAddToBag:hover,
+button#buttonAddToFavourite:hover {
     background-color: orange;
     color: white;
 }
 
-section#infoChaussures button#buttonAddToBag{
+section#infoChaussures button#buttonAddToBag {
     margin-bottom: -6vh;
 }
 
@@ -254,38 +304,38 @@ section#infoChaussures button#buttonAddToBag{
 /* ----------------------------------- Footer ----------------------------------- */
 
 footer {
-  margin-top: 3vh;
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+    margin-top: 3vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 footer div {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 footer h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer ul li {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 footer ul li a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 footer ul li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }

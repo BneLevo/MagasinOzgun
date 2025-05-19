@@ -1,0 +1,11 @@
+[
+    {
+        "id": "Nike",
+        "logo": "./img/logoNike.jpg"
+    },
+    {
+        "id": "Adidas",
+        "logo": "./img/logoAdidas.png"
+    }
+]
+    
