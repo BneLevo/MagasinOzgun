@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <?php
-$json = file_get_contents("./db/chaussures.json");
-$datas = json_decode($json, true);
 
 $idChaussure = $_GET['id'];
 ?>
@@ -12,30 +10,17 @@ $idChaussure = $_GET['id'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozgun</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title><?= $shoes['name'] ?></title>
+    <link rel="stylesheet" href="/MagasinOzgun/Ozgun/public/css/style.css">
 </head>
 
-
-<?php
-for ($data = 0; $data < 8; $data++) {
-    # code...
-}
-foreach ($datas as $data) {
-    $lIdChaussures = $data['id'];
-    if ($idChaussure == $lIdChaussures) {
-        ?>
-
         <body id="pageChaussures">
-            <?php include("./header.php") ?>
-
             <main>
                 <div id="imgChaussuresEtCommentaires">
                     <section id="imgEtChaussure">
                         <div id="couleurChaussure">a</div>
                         <div id="imageChaussure">
-                            <?php $imageChaussure = $data['image'] ?>
-                            <img src="<?= $imageChaussure ?>" alt="">
+                            <img src="<?= $shoes['img'] ?>" alt="">
                         </div>
                     </section>
 
@@ -46,29 +31,18 @@ foreach ($datas as $data) {
                         </div>
                     </section>
                 </div>
-
                 <section id="infoChaussures">
 
-                    <?php $nomChaussure = $data['Chaussures'] ?>
-                    <div id="nomChaussures"><?= $nomChaussure ?></div>
-                    <!-- Brend of shoes -->
-                    <div id="marqueChaussures">info chaussures</div>
-
-                    <!-- Prize of shoes -->
-                    <?php $prixChaussure = $data['prix'] ?>
-                    <div id="prixChaussures"><?= $prixChaussure ?> CHF</div>
+                    <div id="nomChaussures"><?= $shoes['name'] ?></div>
+                    <div id="marqueChaussures"><?= $shoes['brand'] ?></div>
+                    <div id="prixChaussures"><?= $shoes['price'] ?> CHF</div>
 
                     <!-- Color of shoes -->
                     <div>a</div>
 
-                    <!-- Size of shoes -->
-                    <?php
-                    $tailleChaussure = $data["taille"]
-                        ?>
-
                     <div id="tailleChaussures">
                         <?php
-                        foreach ($tailleChaussure as $taille) {
+                        foreach ($shoes["size"] as $taille) {
 
                             ?>
                             <button id="boxTailleChaussures">
@@ -82,15 +56,5 @@ foreach ($datas as $data) {
                     <button id="buttonAddToFavourite">Favourite &#10084;</button>
                 </section>
             </main>
-
-            <?php include("footer.php") ?>
         </body>
-
-        <?php
-    }
-}
-
-?>
-
-
 </html>

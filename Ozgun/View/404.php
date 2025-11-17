@@ -1,22 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozgun</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <?php 
-        include("./header.php");
-    ?>
-
-
-
-    <?php 
-        include("./footer.php");
-    ?>
+    this is 404 page
 </body>
-
 </html>
