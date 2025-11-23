@@ -24,6 +24,8 @@
         <div id="produitsDiv">
             <article id="produits">
     <?php
+    // if no shoes were found
+    if(!empty($shoes)):
     foreach ($shoes as $shoe):
         ?>
         <div>
@@ -34,7 +36,13 @@
             <button>Add To Bag</button>
         </div>
         <?php
-    endforeach ?>
+    endforeach;
+    else: ?>
+        <div>
+                <h3>No shoes were found that match your search criteria.</h3>
+                <p>Please try a different keyword or reset your filters.</p>
+            </div>
+    <?php endif?>
                 </article>
             </div>
         </section>
