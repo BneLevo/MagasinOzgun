@@ -22,5 +22,21 @@ class Shoe {
         $stmt->execute([$id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function getByName($name){
+        $sql = "SELECT * FROM Shoe WHERE name LIKE :name";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(":name", "%" . $name . "%");
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+    public function getByYear($year) {
+        $sql = "SELECT * FROM Shoe WHERE release_year = :year";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(":year", $year);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
 

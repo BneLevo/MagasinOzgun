@@ -30,6 +30,10 @@ switch($action){
             $controller = new Controller();
             $controller->shoePage($id);
         break;
+    case 'search':
+        $controller = new Controller();
+        $controller->searchPage();
+        break;
     default :
         include VIEW_PATH . '404.php';
         break;
