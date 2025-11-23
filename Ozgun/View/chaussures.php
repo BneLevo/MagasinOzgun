@@ -15,6 +15,7 @@ $idChaussure = $_GET['id'];
 </head>
 
         <body id="pageChaussures">
+        <?php include VIEW_PATH . "/includes/header.php" ?>
             <main>
                 <div id="imgChaussuresEtCommentaires">
                     <section id="imgEtChaussure">
@@ -56,5 +57,6 @@ $idChaussure = $_GET['id'];
                     <button id="buttonAddToFavourite">Favourite &#10084;</button>
                 </section>
             </main>
+        <?php include VIEW_PATH . "/includes/footer.php" ?>
         </body>
 </html>

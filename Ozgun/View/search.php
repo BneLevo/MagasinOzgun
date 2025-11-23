@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/MagasinOzgun/Ozgun/public/css/style.css">
 </head>
 <body>
+<?php include VIEW_PATH . "/includes/header.php" ?>
 <main>
     <form action="" method="GET">
 
@@ -47,5 +48,6 @@
             </div>
         </section>
 </main>
+<?php include VIEW_PATH . "/includes/footer.php" ?>
 </body>
 </html>

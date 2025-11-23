@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<?php include VIEW_PATH . "/includes/header.php" ?>
     <main>
         <article id="grandImage">
             <p id="grandImageNom">Nike Air Max</p>
@@ -42,6 +43,8 @@
             </div>
         </section>
     </main>
+
+<?php include VIEW_PATH . "/includes/footer.php" ?>
 </body>
 
 </html>
