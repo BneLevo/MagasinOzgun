@@ -23,7 +23,32 @@ class Controller{
         } else {
             include VIEW_PATH . '404.php';
         }
+    }
 
+    public function searchPage(){
+
+        $shoe = new shoe();
+        $shoes = $shoe->getAll();
+
+        if(isset($_GET['search'])){
+
+            $searchBar = filter_input(INPUT_GET, 'searchBar');
+            $year = filter_input(INPUT_GET, 'year');
+
+            if(!empty($searchBar) && !empty($year)){
+
+                $shoes = $shoe->getByYearAndName($searchBar, $year);
+            }
+            else{
+                if(!empty($searchBar))
+                    $shoes = $shoe->getByName($searchBar);
+                if(!empty($year))
+                    $shoes = $shoe->getByYear($year);
+            }
+
+        }
+
+        require VIEW_PATH . 'search.php';
 
     }
 
