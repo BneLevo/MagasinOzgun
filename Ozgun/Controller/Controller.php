@@ -35,10 +35,17 @@ class Controller{
             $searchBar = filter_input(INPUT_GET, 'searchBar');
             $year = filter_input(INPUT_GET, 'year');
 
-            if(!empty($searchBar))
-                $shoes = $shoe->getByName($searchBar);
-            if(!empty($year))
-                $shoes = $shoe->getByYear($year);
+            if(!empty($searchBar) && !empty($year)){
+
+                $shoes = $shoe->getByYearAndName($searchBar, $year);
+            }
+            else{
+                if(!empty($searchBar))
+                    $shoes = $shoe->getByName($searchBar);
+                if(!empty($year))
+                    $shoes = $shoe->getByYear($year);
+            }
+
         }
 
         require VIEW_PATH . 'search.php';

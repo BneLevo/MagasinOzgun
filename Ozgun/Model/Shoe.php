@@ -38,5 +38,14 @@ class Shoe {
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    public function getByYearAndName($name, $year) {
+        $sql = "SELECT * FROM Shoe WHERE name LIKE :name AND release_year = :year";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(":name", "%" . $name . "%");
+        $stmt->bindValue(":year", $year);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
 
